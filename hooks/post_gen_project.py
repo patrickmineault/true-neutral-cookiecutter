@@ -19,23 +19,24 @@ _____________________________________________________________________________
 .-.-.-'   _o\ \\\     '::'   (o_ '-.-' |__\'-.-;~ ~ ~ ~ ~ ~ ~~/   /\   
           \ /  \\\__          )_\    .:::::::.-'\            '- - -|
      :::''':::::^)__\:::::::::::::::::'''''''-.  \                  '- - - - 
-    :::::::  '''''''''''   ''''''''''''':::. -'\  \                    
+    :::::::  '''''''''''   ''''''''''''':::. -'\  \       C. SWANSIGER
 _____':::::_____________________________________\__\_________________________
 
-If you have not done so already, create a conda environment for your new project
-with:
+If you have not done so already, create a conda environment for your new 
+project with:
 
 cd {{cookiecutter.repo_name}}
 conda create --name {{cookiecutter.repo_name}} python=3.8
 conda activate {{cookiecutter.repo_name}}
-conda export env >> environment.yml
+conda export env > environment.yml
 
 Install your new project in your local conda environment with:
 
 pip install -e .
 
-Don't forget to sync to github. Have fun!
+You will need to manually add data to .gitignore to prevent it from syncing to
+version control.
 
-Ascii art from C. SWANSIGER
+Don't forget to sync to GitHub. Have fun!
 """
 print(help)
