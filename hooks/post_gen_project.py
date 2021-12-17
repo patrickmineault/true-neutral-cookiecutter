@@ -28,7 +28,7 @@ project with:
 cd {{cookiecutter.repo_name}}
 conda create --name {{cookiecutter.repo_name}} python=3.8
 conda activate {{cookiecutter.repo_name}}
-conda export env > environment.yml
+conda env export > environment.yml
 
 Install your new project in your local conda environment with:
 
